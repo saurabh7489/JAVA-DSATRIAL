@@ -37,10 +37,36 @@ public static void main(String[] args) {
 //    System.out.println(sum);
 //     }
 // }
-for(int i=1;i<=4;i++){
-    for(int j=1;j<=5;j++){
-        System.out.print("*");
+// for(int i=1;i<=4;i++){
+//     for(int j=1;j<=5;j++){
+//         System.out.print("*");
+//     }
+//     System.out.println();
+// }
+// for(int i=1;i<=4;i++){
+//     for(int j=1;j<=5;j++){
+//      if(i==1||j==1||i==4||j==5){
+//      System.out.print("*");
+//      }  
+//      else{
+//         System.out.print(" ");
+//      }
+//     }
+//   System.out.println();
+// }
+// print right anglr tri
+// for(int i=1;i<=4;i++){//for row
+//     for(int j=1;j<=i;j++){//for colum
+// System.out.print("*");
+//     }
+//     System.out.println();// for next line
+// }
+// inverse pyramid
+//nexted loop
+for(int i=1;i<=4;i++){//outer loop 
+    for(int j=i;j<=4;j++){//iner loop
+        System.out.print("*");//print star
     }
-    System.out.println();
+    System.out.println();//for next line 
 }
 }}
