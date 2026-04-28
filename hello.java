@@ -63,10 +63,28 @@ public static void main(String[] args) {
 // }
 // inverse pyramid
 //nexted loop
-for(int i=1;i<=4;i++){//outer loop 
-    for(int j=i;j<=4;j++){//iner loop
-        System.out.print("*");//print star
+// for(int i=1;i<=4;i++){//outer loop 
+//     for(int j=i;j<=4;j++){//iner loop
+//         System.out.print("*");//print star
+//     }
+//     System.out.println();//for next line 
+// }
+
+// for(int i=1;i<=4;i++){//for line
+//     for(int j=i;j<=3;j++){
+//         System.out.print(" ");//for spacing
+//     }
+//     for(int k=1;k<=i;k++){
+//         System.out.print("*");//for printing star
+//     }
+// System.out.println();//for next line
+// }
+
+//half pyramid with number
+for(int i =1;i<=5;i++){ //for printing rows or 5line
+    for(int j=1;j<=i;j++){//inner loop -> for number
+        System.out.print(j);//printing j
     }
-    System.out.println();//for next line 
+    System.out.println();//next line
 }
 }}
