@@ -68,3 +68,25 @@
 //     }
 // }
 
+
+// eligible for vote or not
+
+
+// import java.util.*;
+// public class exercise {
+// public static void eligible(int age){
+//     if(age>=18){
+//         System.out.println("Person is eligible for Vote");
+//     }
+//     else{
+//         System.out.println("Person is not eligible for Vote");
+//     }
+// }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int age =sc.nextInt();
+//        eligible(age); 
+//     }
+// }
+
+// 
