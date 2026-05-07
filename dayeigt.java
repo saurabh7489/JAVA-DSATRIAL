@@ -11,7 +11,7 @@
 //        }
 // System.out.print(count+"");
 
-// reverse the num
+
 
 // import java.util.*;
 // public class dayeigt {
