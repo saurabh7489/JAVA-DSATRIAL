@@ -22,6 +22,6 @@ public class dayeigt {
             n=n/10;
             collect=lastDigit+collect*10;
         }
-        System.out.println(collect);
+        System.out.println(collect); 
     }
 }
