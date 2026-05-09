@@ -59,7 +59,7 @@ import java.util.*;
 public class daytn {
 
     public static void main(String[] args) {
-        int n=2;
+        int n=9;
         int n1=12;
         for(int i=1;i<=n;i++){
             if(n%i==0 && n1%i==0){
