@@ -14,19 +14,38 @@
 //     }
 // }
 
+// import java.util.*;
+// public class dayelvn {
+//     // static int n;
+//     // static int count=45 ;
+    
+//     public static void Name(int n){
+//         if(n==0)
+//             return;
+//         System.out.println(n);
+//             n--;
+//             Name(n);
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         Name(n);
+//     }
+// }
+
 import java.util.*;
 public class dayelvn {
-   static Scanner sc=new Scanner(System.in);
-    static int count= 1;
-    static int n=sc.nextInt();
-    public static void Name(){
-        if(count==n+1)
-            return;
-        System.out.println(count+".Sourabh");
-            count++;
-            Name();
-    }
+    static int ans=0;
+public static void sumNumber(int n){
+    if(n==0){
+        System.out.println(ans);
+        return;}
+    ans=n+ans;
+    n--;
+    sumNumber(n);
+    
+}
     public static void main(String[] args) {
-        Name();
+        sumNumber(3);
     }
 }
