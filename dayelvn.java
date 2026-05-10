@@ -33,21 +33,21 @@
 //     }
 // }
 
-import java.util.*;
-public class dayelvn {
-    static int ans=0;
-public static void sumNumber(int n){
-    if(n==0){
-        System.out.println(ans);
-        return;}
-    ans=n+ans;
-    n--;
-    sumNumber(n);
+// import java.util.*;
+// public class dayelvn {
+//     static int ans=0;
+// public static void sumNumber(int n){
+//     if(n==0){
+//         System.out.println(ans);
+//         return;}
+//     ans=n+ans;
+//     n--;
+//     sumNumber(n);
     
-}
-    public static void main(String[] args) {
-        sumNumber(3);
-    }
-}
+// }
+//     public static void main(String[] args) {
+//         sumNumber(3);
+//     }
+// }
 
 
