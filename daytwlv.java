@@ -20,26 +20,56 @@
 //     }
 // }
 
+// import java.util.*;
+// public class daytwlv {
+//     static int Array1[]={1,2,3,4,5};
+    
+    
+//     public static void revArray(int s,int n){
+//         if(s>=n){System.out.print("[");
+//        for(int i=0;i<=Array1.length-1;i++){
+//         System.out.print(Array1[i]+",");
+//        }
+//        System.out.println("]");
+//         return;}
+
+//        int temp = Array1[s];
+//        Array1[s]=Array1[n];
+//        Array1[n]=temp;
+//        revArray(s+1, n-1);
+//     }
+//     public static void main(String[] args) {
+//         revArray(0, Array1.length-1);
+       
+//     }
+// }
+
 import java.util.*;
 public class daytwlv {
-    static int Array1[]={1,2,3,4,5};
-    
-    
-    public static void revArray(int s,int n){
-        if(s>=n){System.out.print("[");
-       for(int i=0;i<=Array1.length-1;i++){
-        System.out.print(Array1[i]+",");
-       }
-       System.out.println("]");
-        return;}
 
-       int temp = Array1[s];
-       Array1[s]=Array1[n];
-       Array1[n]=temp;
-       revArray(s+1, n-1);
+
+    public boolean isPalindrome(String s) {
+
+        // remove non-alphanumeric characters
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+        return check(s, 0);
     }
+
+    public boolean check(String s, int st) {
+
+        if (st >= s.length() / 2)
+            return true;
+
+        if (s.charAt(st) != s.charAt(s.length() - st - 1))
+            return false;
+
+        return check(s, st + 1);
+    }
+
+
     public static void main(String[] args) {
-        revArray(0, Array1.length-1);
-       
+         daytwlv obj = new daytwlv();
+    System.out.println(obj.isPalindrome("MADAM"));
     }
 }
