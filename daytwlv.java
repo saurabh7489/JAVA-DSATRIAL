@@ -44,32 +44,51 @@
 //     }
 // }
 
+// import java.util.*;
+// public class daytwlv {
+
+
+//     public boolean isPalindrome(String s) {
+
+//         // remove non-alphanumeric characters
+//         s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+//         return check(s, 0);
+//     }
+
+//     public boolean check(String s, int st) {
+
+//         if (st >= s.length() / 2)
+//             return true;
+
+//         if (s.charAt(st) != s.charAt(s.length() - st - 1))
+//             return false;
+
+//         return check(s, st + 1);
+//     }
+
+
+//     public static void main(String[] args) {
+//          daytwlv obj = new daytwlv();
+//     System.out.println(obj.isPalindrome("MADAM"));
+//     }
+// }
+
 import java.util.*;
-public class daytwlv {
+public class daytwlv{
+   
+   
+   
+    public static int f(int n){
+        if(n<=1)
+        return n;
+        
+        int last=f(n-1);
+int sLast=f(n-2);
+        return last+sLast;
 
-
-    public boolean isPalindrome(String s) {
-
-        // remove non-alphanumeric characters
-        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-
-        return check(s, 0);
     }
-
-    public boolean check(String s, int st) {
-
-        if (st >= s.length() / 2)
-            return true;
-
-        if (s.charAt(st) != s.charAt(s.length() - st - 1))
-            return false;
-
-        return check(s, st + 1);
-    }
-
-
     public static void main(String[] args) {
-         daytwlv obj = new daytwlv();
-    System.out.println(obj.isPalindrome("MADAM"));
+        System.out.println(f(1));
     }
 }
