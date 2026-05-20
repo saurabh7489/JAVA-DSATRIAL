@@ -74,21 +74,26 @@
 //     }
 // }
 
-import java.util.*;
-public class daytwlv{
+// import java.util.*;
+// public class daytwlv{
    
    
    
-    public static int f(int n){
-        if(n<=1)
-        return n;
+//     public static int f(int n){
+//         if(n<=1)
+//         return n;
         
-        int last=f(n-1);
-int sLast=f(n-2);
-        return last+sLast;
+//         int last=f(n-1);
+// int sLast=f(n-2);
+//         return last+sLast;
 
-    }
-    public static void main(String[] args) {
-        System.out.println(f(1));
-    }
-}
+//     }
+//     public static void main(String[] args) {
+//         System.out.println(f(1));
+//     }
+// }
+
+
+
+
+
