@@ -93,7 +93,12 @@
 //     }
 // }
 
-
+import java.util.*;
+ public class daytwlv {
+ public static void revArray(int arr[],int s,int e){
+    
+ }
+}
 
 
 
